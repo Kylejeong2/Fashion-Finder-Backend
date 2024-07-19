@@ -9,13 +9,6 @@ source venv/bin/activate
 
 pip install -r requirements.txt
 
-- To upload to AWS Lambda
-
-"""
-cd package
-zip -r ../lambda_function.zip .
-cd ..
-"""
 - Used: 
 
 AWS Lambda
