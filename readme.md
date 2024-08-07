@@ -1,4 +1,9 @@
 # Fashion Finder Backend Service
+### Shop for any piece of clothing. 
+
+NOTE: This was built to be hosted as an AWS Lambda Function, but you can also just run it locally in using Streamlit. You'll need the AWS S3 buckets still, but don't worry about lambda_function.py, requirements2.txt, or anything here that says "lambda". 
+
+The image search is also using Base64 encoded images, so you'll need to encode your images before searching for them. Here's a link to a site that can encode your images: https://elmah.io/tools/base64-image-encoder/.
 
 - Create venv
 
@@ -11,8 +16,11 @@ pip install -r requirements.txt
 
 - Used: 
 
-AWS Lambda
-AWS S3 (img storage) *you only need one bucket for it to work but i used 2 here so that i could have a little front end to demo
+AWS S3 (img storage) *you only need one bucket for Lambda Service to work but i used 2 here so that i could have a little front end to demo
+
+FOR DEMO:
+- Create 2 s3 buckets and set up permissions below:
+- Fill .env with AWS info.
 
 - Permissions Tab:
     - Make sure you turn OFF "block all public access"
@@ -38,4 +46,4 @@ AWS S3 (img storage) *you only need one bucket for it to work but i used 2 here 
 
 SERP API (google lens search)[https://serpapi.com/]
 
-test_img.txt is a supreme shirt in b64
+*** test_img.txt is a supreme shirt in base64

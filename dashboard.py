@@ -28,6 +28,7 @@ def upload_image_to_s3(base64_image):
 
 def main():
     st.title("Image Upload Dashboard")
+    st.write("Images must be base64 encoded. You can use https://elmah.io/tools/base64-image-encoder/ to encode your images.")
 
     base64_input = st.text_area("Paste your base64 encoded image here:")
     st.write("Command Enter to Submit.")
