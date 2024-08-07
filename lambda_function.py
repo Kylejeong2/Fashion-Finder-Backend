@@ -5,7 +5,7 @@ import base64
 from dotenv import load_dotenv
 import boto3
 
-load_dotenv()
+load_dotenv() 
 
 def lambda_handler(event, context):
     print(event)

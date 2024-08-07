@@ -33,7 +33,7 @@ def lambda_handler(event, context):
         'body': json.dumps(similar_items)
     }
 
-def search_similar_items(base64_input):
+def search_similar_items(base64_input): 
 
     s3_client = boto3.client('s3',
         aws_access_key_id=os.getenv("AWS_ACCESS_KEY_ID_TEST"),
